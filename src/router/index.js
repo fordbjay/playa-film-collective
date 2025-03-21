@@ -1,30 +1,17 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../components/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '../views/Home.vue';
+import About from '../views/About.vue';
 
-
+// Define routes
 const routes = [
-  {
-    path: '',
-    name: '',
-    component: Home,
-    meta: {
-      title: ""
-    }
-  },
-]
+  { path: '/', component: Home },
+  { path: '/about', component: About },
+];
 
+// Create router instance
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  mode: "history",
-  scrollBehavior (to, from, savedPosition) {
-    return { top: 0 }
-  },
-})
+});
 
-router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title}`
-  next();
-})
-
-export default router
+export default router;
