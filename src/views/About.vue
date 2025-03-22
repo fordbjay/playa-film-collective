@@ -1,6 +1,6 @@
 <template>
 
-    <p>about</p>
+    <p>THIS IS THE ABOUT SECTION</p>
 
 </template>
 
