@@ -6,8 +6,8 @@
     </video>
     <div class="content-overlay">
       <div class="text-container">
-        <h1>PLAYA FILM COLLECTIVE</h1>
-        <h2 class="coming-soon">COMING SOON...</h2>
+        <img src="../assets/pfc-logo.png" alt="logo" class="logo">
+        <!-- <h2 class="coming-soon">COMING SOON...</h2> -->
       </div>
     </div>
   </div>
@@ -58,6 +58,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.logo {
+  width: 500px;
+  height: 100%;
+  filter: invert(100);
 }
 
 .coming-soon {
