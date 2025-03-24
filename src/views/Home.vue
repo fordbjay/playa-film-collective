@@ -6,7 +6,7 @@
     </video>
     <div class="content-overlay">
       <div class="text-container">
-        <img src="../assets/pfc-logo.png" alt="logo" class="logo">
+        <!-- <img src="../assets/pfc-logo.png" alt="logo" class="logo"> -->
         <!-- <h2 class="coming-soon">COMING SOON...</h2> -->
       </div>
     </div>
@@ -18,6 +18,7 @@
 </script>
 
 <style scoped>
+
 .video-container {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
@@ -61,13 +62,13 @@
 }
 
 .logo {
-  width: 500px;
+  width: 300px;
   height: 100%;
   filter: invert(100);
 }
 
-.coming-soon {
+/* .coming-soon {
   font-size: 1.5rem;
   margin-top: 10px;
-}
+} */
 </style>
