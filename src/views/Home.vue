@@ -1,16 +1,10 @@
 <template>
-  <div class="video-container">
+  <!-- <div class="video-container">
     <video class="loop-video" playsinline autoplay loop muted>
       <source src="/src/assets/drone-background.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <div class="content-overlay">
-      <div class="text-container">
-        <!-- <img src="../assets/pfc-logo.png" alt="logo" class="logo"> -->
-        <!-- <h2 class="coming-soon">COMING SOON...</h2> -->
-      </div>
-    </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup>
@@ -18,7 +12,7 @@
 </script>
 
 <style scoped>
-
+/* 
 .video-container {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
@@ -53,22 +47,6 @@
   font-size: 2rem;
   background: rgba(0, 0, 0, 0.3);
   flex-direction: column;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  width: 300px;
-  height: 100%;
-  filter: invert(100);
-}
-
-/* .coming-soon {
-  font-size: 1.5rem;
-  margin-top: 10px;
 } */
+
 </style>
