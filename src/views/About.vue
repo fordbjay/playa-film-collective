@@ -34,6 +34,7 @@
 
 .text-wrapper {
     background-color: rgb(58, 123, 110);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
     border-radius: 30px;
     /* border: 1px solid; */

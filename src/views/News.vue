@@ -1,6 +1,7 @@
 <template>
-
-    <p>THIS IS THE NEWS SECTION</p>
+    <div class="main-container">
+        NEWS
+    </div>
 
 </template>
 
@@ -8,6 +9,13 @@
 
 </script>
 
-<style>
+<style scoped>
 
+.main-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
 </style>

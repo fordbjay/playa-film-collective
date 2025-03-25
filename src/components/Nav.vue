@@ -40,14 +40,14 @@
 
  .nav-link {
     font-family:'Courier New', Courier, monospace;
-    color: white;
+    color: black;
     font-size: 20px;
     text-decoration: none;
  }
 
  .logo {
    width: 175px;
-   filter: invert(100);
+   /* filter: invert(100); */
  }
 
 </style>
