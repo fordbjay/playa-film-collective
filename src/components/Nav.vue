@@ -39,9 +39,9 @@
  }
 
  .nav-link {
-    font-family:'Courier New', Courier, monospace;
+    font-family:'tropical taste demo';
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
  }
 
