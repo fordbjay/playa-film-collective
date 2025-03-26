@@ -1,4 +1,13 @@
 <template>
+  <div class="links-container">
+      <a href="https://www.facebook.com">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.youtube.com">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+  </div>
+
   <!-- <div class="video-container">
     <video class="loop-video" playsinline autoplay loop muted>
       <source src="/src/assets/drone-background.mp4" type="video/mp4" />
@@ -12,6 +21,28 @@
 </script>
 
 <style scoped>
+
+.links-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+}
+
+.links-container a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-container a:hover {
+    color: #ffcc00;
+}
+
+
 /* 
 .video-container {
   font-family: Arial, Helvetica, sans-serif;

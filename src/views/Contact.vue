@@ -1,6 +1,13 @@
 <template>
     <div class="main-container">
-        CONTACT
+        <p>
+            <a 
+                class="email-link"
+                href="mailto:playafilmcollective@gmail.com"
+            >
+            playafilmcollective@gmail.com
+            </a>
+        </p>
     </div>
 
 </template>
@@ -16,6 +23,11 @@
     justify-content:space-around;
     align-items: center;
     height: 100vh;
-    color: white;
 }
+
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+
 </style>
