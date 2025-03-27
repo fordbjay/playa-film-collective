@@ -1,4 +1,5 @@
 <template>
+    <navBar></navBar>
     <div class="main-container">
         <div class="text-wrapper">
             <p>
@@ -19,7 +20,8 @@
 
 </template>
 
-<script>
+<script setup>
+import navBar from '../components/nav-bar.vue'
 
 </script>
 

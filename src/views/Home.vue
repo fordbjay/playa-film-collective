@@ -1,22 +1,11 @@
 <template>
-  <div class="links-container">
-      <a href="https://www.facebook.com">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.youtube.com">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-  </div>
-
-  <!-- <div class="video-container">
-    <video class="loop-video" playsinline autoplay loop muted>
-      <source src="/src/assets/drone-background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div> -->
+  <navBar></navBar>
+  <foot></foot>
 </template>
 
 <script setup>
+import navBar from '../components/nav-bar.vue'
+import foot from '../components/footer.vue'
 
 </script>
 
@@ -24,7 +13,7 @@
 
 .links-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -32,7 +21,7 @@
 }
 
 .links-container a {
-    font-size: 30px;
+    font-size: 50px;
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;

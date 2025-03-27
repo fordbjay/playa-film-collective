@@ -1,10 +1,10 @@
 <template>
     <div class="nav-container">
       <div class="links">
+         <RouterLink to="/" class="nav-link"><img src="../assets/pfc-logo.png" alt="logo" class="logo"></RouterLink>
          <RouterLink to="/about" class="nav-link">About</RouterLink>
          <RouterLink to="/films" class="nav-link">Films</RouterLink>
-         <RouterLink to="/" class="nav-link"><img src="../assets/pfc-logo.png" alt="logo" class="logo"></RouterLink>
-         <RouterLink to="/news" class="nav-link">News</RouterLink>
+         <!-- <RouterLink to="/news" class="nav-link">News</RouterLink> -->
          <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
       </div>
     
@@ -17,11 +17,11 @@
 
 <style scoped>
  .nav-container {
-   position: fixed; /* Keeps it on top */
+  position: fixed; /* Keeps it on top */
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* Adjust height as needed */
+  height: 125px; /* Adjust height as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
  }
 
  .links {
-   display: flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -39,14 +39,14 @@
  }
 
  .nav-link {
-    font-family:'tropical taste demo';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    font-size: 25px;
+    font-size: 18px;
     text-decoration: none;
  }
 
  .logo {
-   width: 175px;
+   width: 100px;
    /* filter: invert(100); */
  }
 

@@ -1,4 +1,5 @@
 <template>
+    <navBar></navBar>
     <div class="main-container">
         <p>
             <a 
@@ -12,8 +13,8 @@
 
 </template>
 
-<script>
-
+<script setup>
+import navBar from '../components/nav-bar.vue'
 </script>
 
 <style scoped>

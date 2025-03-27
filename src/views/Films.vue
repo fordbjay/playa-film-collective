@@ -1,4 +1,5 @@
 <template>
+    <navBar></navBar>
     <div class="main-container">
         <div class="wrapper">
             <img class="hr-logo" src="../assets/48hr-logo.png" alt="">
@@ -11,8 +12,8 @@
 
 </template>
 
-<script>
-
+<script setup>
+import navBar from '../components/nav-bar.vue'
 </script>
 
 <style scoped>
