@@ -60,7 +60,7 @@ p {
       transition: color 0.3s ease;
   }
   
-  .links-container a:hover {
+  .links a:hover {
       color: #000000;
   }
   

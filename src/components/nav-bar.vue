@@ -43,11 +43,20 @@
     color: black;
     font-size: 18px;
     text-decoration: none;
+    transition: color 0.3s ease;
  }
+
+ .nav-link:hover {
+      color: #ffffff;
+  }
 
  .logo {
    width: 100px;
-   /* filter: invert(100); */
+   transition: filter 0.3s ease;
+ }
+
+ .logo:hover {
+  filter: invert(100);
  }
 
 </style>
