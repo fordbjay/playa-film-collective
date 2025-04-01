@@ -38,6 +38,7 @@ import foot from '../components/footer.vue'
   align-items: center;
   justify-content: center;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .pfc-logo {
@@ -74,6 +75,16 @@ import foot from '../components/footer.vue'
 
 .socials-container a:hover {
   transform: scale(1.2);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 500px) {

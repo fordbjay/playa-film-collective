@@ -51,6 +51,7 @@ body {
   height: 100vh;
   overflow: hidden;
   z-index: -1000;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .loop-video {
@@ -78,6 +79,15 @@ body {
   font-size: 2rem;
   background: rgba(0, 0, 0, 0.3);
   flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* .page-content {
