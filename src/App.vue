@@ -51,7 +51,6 @@ body {
   height: 100vh;
   overflow: hidden;
   z-index: -1000;
-  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .loop-video {
@@ -63,6 +62,7 @@ body {
   min-height: 100vh;
   object-fit: cover;
   z-index: -1000;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .content-overlay {

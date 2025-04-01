@@ -38,7 +38,6 @@ import foot from '../components/footer.vue'
   align-items: center;
   justify-content: center;
   height: 100vh;
-  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .pfc-logo {
@@ -47,6 +46,7 @@ import foot from '../components/footer.vue'
   align-items: center;
   width: 300px;
   filter: invert(100);
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .text {
@@ -65,12 +65,12 @@ import foot from '../components/footer.vue'
   justify-content: space-around;
   gap: 50px;
   margin-top: 20px;
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 .socials-container a {
   font-size: 50px;
   color: white;
-  transition: transform 0.2s ease-in-out;
 }
 
 .socials-container a:hover {
