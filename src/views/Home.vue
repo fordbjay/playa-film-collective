@@ -90,10 +90,18 @@ import foot from '../components/footer.vue'
 }
 
 @media (max-width: 500px) {
+  .main-container {
+    padding: 0 20px;
+    text-align: center;
+  }
+
   .pfc-logo {
     width: 80vw;
   }
 
+  .socials-container {
+    gap: 30px;
+  }
 }
 
 </style>
