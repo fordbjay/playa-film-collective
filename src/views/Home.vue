@@ -71,6 +71,8 @@ import foot from '../components/footer.vue'
 .socials-container a {
   font-size: 50px;
   color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+
 }
 
 .socials-container a:hover {
