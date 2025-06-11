@@ -1,9 +1,10 @@
 <template>
   <!-- <navBar></navBar> -->
+   <hamburger></hamburger>
    <div class="main-container">
       <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
       <!-- <p class="text">Coming Soon!</p> -->
-      <div class="socials-container">
+      <!-- <div class="socials-container">
         <a href="https://www.facebook.com/profile.php?id=61574939697817" target="_blank">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
@@ -19,7 +20,7 @@
         <a href="mailto:playafilmcollective@gmail.com">
           <i class="fa-solid fa-envelope"></i>
         </a>
-      </div>
+      </div> -->
    </div>
   <!-- <foot></foot> -->
 </template>
@@ -27,6 +28,7 @@
 <script setup>
 import navBar from '../components/nav-bar.vue'
 import foot from '../components/footer.vue'
+import hamburger from '../components/hamburger.vue'
 
 </script>
 
