@@ -58,7 +58,6 @@ import foot from '../components/footer.vue'
 
 .socials-container {
   width: 80%;
-  /* min-width: 500px; */
   max-width: 500px;
   display: flex;
   flex-wrap: wrap;
