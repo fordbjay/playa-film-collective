@@ -22,7 +22,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 56px;
+    width: 45px;
     height: 56px;
     display: flex;
     justify-content: center;

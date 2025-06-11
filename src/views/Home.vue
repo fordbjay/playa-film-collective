@@ -1,27 +1,32 @@
 <template>
   <!-- <navBar></navBar> -->
-   <hamburger></hamburger>
-   <div class="main-container">
-      <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
-      <!-- <p class="text">Coming Soon!</p> -->
-      <!-- <div class="socials-container">
-        <a href="https://www.facebook.com/profile.php?id=61574939697817" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://x.com/collectiveplaya?s=11" target="_blank">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://www.youtube.com/@PlayaFilmCollective" target="_blank">
+  <hamburger></hamburger>
+  <div class="main-container">
+    <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
+
+
+      <div class="links-container">
+
+        <RouterLink to="/about" class="nav-link">ABOUT</RouterLink>
+        <RouterLink to="/films" class="nav-link">FILMS</RouterLink>
+        <RouterLink to="/contact" class="nav-link">CONTACT</RouterLink>
+      
+
+
+        <a class="social-link" href="https://www.youtube.com/@PlayaFilmCollective" target="_blank">
           <i class="fa-brands fa-youtube"></i>
         </a>
-        <a href="https://www.instagram.com/playafilmcollective/" target="_blank">
+        <a class="social-link" href="https://www.facebook.com/profile.php?id=61574939697817" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="social-link" href="https://x.com/collectiveplaya?s=11" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/playafilmcollective/" target="_blank">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="mailto:playafilmcollective@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div> -->
-   </div>
+      </div>
+  </div>
   <!-- <foot></foot> -->
 </template>
 
@@ -36,48 +41,44 @@ import hamburger from '../components/hamburger.vue'
 
 .main-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 80px;
   height: 100vh;
-}
-
-.pfc-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  filter: invert(100);
+  transition: color 0.3s ease;
   animation: fadeIn 2s ease-in-out forwards;
 }
 
-.text {
-  color: white;
-  font-size: 50px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+.pfc-logo {
+  width: 300px;
+  filter: invert(100);
 }
 
-.socials-container {
-  width: 80%;
-  max-width: 500px;
+.links-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 50px;
-  margin-top: 20px;
-  animation: fadeIn 3s ease-in-out forwards;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
 }
 
-.socials-container a {
-  font-size: 50px;
+.links-container a {
   color: white;
-  transition: transform 0.3s ease, color 0.3s ease;
-
+  text-decoration: none;
 }
 
-.socials-container a:hover {
+.links-container a:hover {
   transform: scale(1.2);
+}
+
+ .nav-link {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+ }
+
+.social-link {
+  font-size: 40px;
 }
 
 
