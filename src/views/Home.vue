@@ -1,5 +1,15 @@
 <template>
   <!-- <navBar></navBar> -->
+
+  <!-- BACKGROUND -->
+  <div class="video-container">
+      <video class="loop-video" playsinline autoplay loop muted>
+        <source src="/src/assets/drone-background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+  </div>
+
+  <!-- HAMBURGER MENU -->
   <hamburger></hamburger>
   <div class="main-container">
     <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
@@ -45,8 +55,7 @@ import hamburger from '../components/hamburger.vue'
   justify-content: center;
   gap: 80px;
   height: 100vh;
-  transition: color 0.3s ease;
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn .75s ease-in-out forwards;
 }
 
 .pfc-logo {
@@ -65,6 +74,7 @@ import hamburger from '../components/hamburger.vue'
 .links-container a {
   color: white;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .links-container a:hover {
@@ -74,13 +84,45 @@ import hamburger from '../components/hamburger.vue'
  .nav-link {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
-
  }
 
 .social-link {
-  font-size: 40px;
+  font-size: 35px;
 }
 
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -999;
+}
+
+.video-container {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.loop-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1000;
+  animation: fadeIn .5s ease-in-out forwards;
+}
 
 @keyframes fadeIn {
   from {
