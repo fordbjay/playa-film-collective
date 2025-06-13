@@ -9,18 +9,14 @@
       </video>
   </div>
 
-  <!-- HAMBURGER MENU -->
-  <hamburger></hamburger>
+  <navBar></navBar>
   <div class="main-container">
     <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
   </div>
-  <!-- <foot></foot> -->
 </template>
 
 <script setup>
 import navBar from '../components/nav-bar.vue'
-import foot from '../components/footer.vue'
-import hamburger from '../components/hamburger.vue'
 
 </script>
 

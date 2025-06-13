@@ -1,62 +1,98 @@
 <template>
-    <div class="nav-container">
-      <div class="links">
-         <RouterLink to="/" class="nav-link"><img src="../assets/pfc-logo.png" alt="logo" class="logo"></RouterLink>
-         <RouterLink to="/about" class="nav-link">About</RouterLink>
-         <RouterLink to="/films" class="nav-link">Films</RouterLink>
-         <!-- <RouterLink to="/news" class="nav-link">News</RouterLink> -->
-         <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
-      </div>
-    
+
+<div :class="{ 'nav-container': true, 'isHome': $route.name === 'Home' }">
+
+    <div class="navs-wrapper wrapper">
+      <RouterLink to="/about" class="nav link">ABOUT</RouterLink>
+      <RouterLink to="/films" class="nav link">FILMS</RouterLink>
+      <RouterLink to="/contact" class="nav link">CONTACT</RouterLink>
     </div>
-</template>
 
-<script>
+    <div class="socials-wrapper wrapper">
+      <a class="social link" href="https://www.youtube.com/@PlayaFilmCollective" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a class="social link" href="https://www.facebook.com/profile.php?id=61574939697817" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a class="social link" href="https://x.com/collectiveplaya?s=11" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a class="social link" href="https://www.instagram.com/playafilmcollective/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    
+</div>
 
-</script>
+  </template>
+  
+  <script setup>
 
-<style scoped>
- .nav-container {
-  position: fixed; /* Keeps it on top */
+  </script>
+  
+  <style scoped>
+
+.nav-container {
+  position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 125px; /* Adjust height as needed */
+  right: 0;
+  bottom: 0;
+  width: 200px; /* Adjust as needed */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000; /* Ensure it stays above everything */
-  padding: 0 20px;
- }
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 50px;
+  z-index: 1000;
+}
 
- .links {
+.isHome {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.navs-wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.socials-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
- }
+}
 
- .nav-link {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s ease;
- }
+.link {
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  transition: .2s ease-in-out;
+}
 
- .nav-link:hover {
-      color: #ffffff;
+.link:hover {
+  transform: scale(1.2);
+}
+
+.nav {
+    font-size: 20px;
+}
+
+.social {
+    font-size: 30px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(175px);
   }
+  to {
+    transform: translate(0px);
+  }
+}
 
- .logo {
-   width: 100px;
-   transition: filter 0.3s ease;
- }
 
- .logo:hover {
-  filter: invert(100);
- }
-
-</style>
+  </style>
+  

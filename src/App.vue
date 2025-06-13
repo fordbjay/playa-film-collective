@@ -1,10 +1,6 @@
 <template>
 
-      <div>
-        <div class="page-content">
-          <RouterView />
-        </div>
-      </div>
+  <RouterView />
 
 </template>
 
@@ -25,9 +21,5 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* .page-content {
-  padding-top: 200px;
-} */
 
 </style>

@@ -34,7 +34,13 @@ import navBar from '../components/nav-bar.vue'
 .email-link {
     color: white;
     font-weight: 900;
+    font-size: 30px;
     text-decoration: none;
+    /* transition: transform 0.3s ease, */
+}
+
+.email-link:hover {
+    transform: scale(1.2);
 }
 
 </style>

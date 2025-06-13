@@ -5,7 +5,6 @@
         <span></span>
     </button>
     
-    <!-- v-if="isOpen" -->
     <transition name="slide">
   <div v-if="isOpen" class="menu">
     <div class="nav-wrapper">
@@ -125,6 +124,7 @@
   text-decoration: none;
   font-size: 26px;
   transition: 0.3s ease;
+  margin: 5px 0;
 }
 
 .nav-link:hover {
@@ -146,6 +146,7 @@
   color: white;
   font-size: 40px;
   transition: 0.3s ease;
+  margin: 5px 0;
 }
 
 .social-link:hover {
