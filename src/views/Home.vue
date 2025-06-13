@@ -13,29 +13,6 @@
   <hamburger></hamburger>
   <div class="main-container">
     <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
-
-
-      <div class="links-container">
-
-        <RouterLink to="/about" class="nav-link">ABOUT</RouterLink>
-        <RouterLink to="/films" class="nav-link">FILMS</RouterLink>
-        <RouterLink to="/contact" class="nav-link">CONTACT</RouterLink>
-      
-
-
-        <a class="social-link" href="https://www.youtube.com/@PlayaFilmCollective" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a class="social-link" href="https://www.facebook.com/profile.php?id=61574939697817" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a class="social-link" href="https://x.com/collectiveplaya?s=11" target="_blank">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a class="social-link" href="https://www.instagram.com/playafilmcollective/" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
   </div>
   <!-- <foot></foot> -->
 </template>
@@ -82,7 +59,7 @@ import hamburger from '../components/hamburger.vue'
 }
 
  .nav-link {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
  }
 
