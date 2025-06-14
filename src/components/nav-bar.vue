@@ -1,9 +1,17 @@
 <template>
 
-<div :class="{ 'nav-container': true, 'isHome': $route.name === 'Home' }">
+<div :class="{ 'nav-container': true, 'slide-right': $route.name === 'Home' }">
+
+    <RouterLink v-if="$route.name !== 'Home'" to="/" class="logo-link">
+      <img 
+        :class="{ 'pfc-logo': true, 'slide-left': $route.name !== 'Home' }" 
+        src="../assets/pfc-logo.png" 
+        alt="logo" 
+      />
+    </RouterLink>
 
     <div class="navs-wrapper wrapper">
-      <RouterLink to="/about" class="nav link">ABOUT</RouterLink>
+      <RouterLink to="/about" class="nav link">WHO WE ARE</RouterLink>
       <RouterLink to="/films" class="nav link">FILMS</RouterLink>
       <RouterLink to="/contact" class="nav link">CONTACT</RouterLink>
     </div>
@@ -38,17 +46,35 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 200px; /* Adjust as needed */
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   padding: 50px;
-  z-index: 1000;
+  z-index: 10000;
 }
 
-.isHome {
-    animation: slideIn 1s ease-in-out forwards;
+.slide-right {
+    animation: slideRight 0.5s ease-in-out forwards;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-in-out forwards;
+}
+
+.logo-link {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  /* z-index: 1100; */
+  display: inline-block;
+}
+
+.pfc-logo {
+  width: 125px;
+  filter: invert(100);
+
 }
 
 .navs-wrapper {
@@ -84,9 +110,18 @@
     font-size: 30px;
 }
 
-@keyframes slideIn {
+@keyframes slideRight {
   from {
     transform: translate(175px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translate(-175px);
   }
   to {
     transform: translate(0px);

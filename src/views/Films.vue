@@ -1,13 +1,7 @@
 <template>
     <navBar></navBar>
     <div class="main-container">
-        <div class="wrapper">
-            <img class="hr-logo" src="../assets/48hr-logo.png" alt="">
-            <p>
-                We are participating in the worldwide 48hr 
-                Film <br> Project April 4-6, 2025!
-            </p>
-        </div>
+
     </div>
 
 </template>
@@ -23,23 +17,10 @@ import navBar from '../components/nav-bar.vue'
     justify-content:space-around;
     align-items: center;
     height: 100vh;
-}
-
-.wrapper {
-    background-color: rgb(58, 123, 110);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    border-radius: 30px;
-    /* border: 1px solid; */
+    background-color: rgb(61,97,115);
     color: white;
-    width: 80%;
-    line-height: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
 }
 
-.hr-logo {
-    width: 300px;
-}
 </style>

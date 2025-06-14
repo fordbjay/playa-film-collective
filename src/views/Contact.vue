@@ -29,6 +29,7 @@ import navBar from '../components/nav-bar.vue'
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
+    z-index: 10000000;
 }
 
 .email-link {
@@ -36,7 +37,8 @@ import navBar from '../components/nav-bar.vue'
     font-weight: 900;
     font-size: 30px;
     text-decoration: none;
-    /* transition: transform 0.3s ease, */
+    
+    transition: transform 0.3s ease,
 }
 
 .email-link:hover {

@@ -1,26 +1,23 @@
 <template>
-    <navBar></navBar>
-    <div class="main-container">
-        <div class="text-wrapper">
-            <p>
-                Igniting a film industry in Playa del Carmen will transform 
-                the region into a vibrant creative epicenter, blending its 
-                natural beauty and cultural richness with cinematic storytelling. 
-                This spark will attract filmmakers, artists, and tourists,
-                boosting the local economy through job creation in production, 
-                hospitality, and related sectors. It will empower local talent, 
-                giving them a platform to shine globally, while drawing international 
-                attention—potentially even to events like Cannes. Beyond economics, 
-                it will foster community pride and inspire a new generation of 
-                storytellers, cementing Playa del Carmen as a destination not just 
-                for beaches, but for bold, innovative art.
-            </p>
-        </div>
-    </div>
+
+<navBar></navBar>
+
+<div class="main-container">
+    <p>
+
+        We aim to showcase the creativity and talent here, 
+        proving there’s a hunger for filmmaking in our community. 
+        It’s not just about one event—it’s about building a 
+        legacy, connecting with supporters, and putting Playa 
+        del Carmen on the map as a hub for cinematic innovation, 
+        all while pursuing our passion together.
+    </p>
+</div>
 
 </template>
 
 <script setup>
+
 import navBar from '../components/nav-bar.vue'
 
 </script>
@@ -32,16 +29,23 @@ import navBar from '../components/nav-bar.vue'
     justify-content:space-around;
     align-items: center;
     height: 100vh;
+    background-color: rgb(69,147,171);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    z-index: 10000000;
 }
 
-.text-wrapper {
-    background-color: rgba(58, 123, 110, 0.65);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    border-radius: 30px;
-    /* border: 1px solid; */
+.email-link {
     color: white;
-    width: 80%;
-    line-height: 30px;
+    font-weight: 900;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease,
 }
+
+.email-link:hover {
+    transform: scale(1.2);
+}
+
 </style>

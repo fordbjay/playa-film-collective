@@ -11,7 +11,7 @@
 
   <navBar></navBar>
   <div class="main-container">
-    <img class="pfc-logo" src="../assets/pfc-logo.png" alt="">
+    <img class="pfc-logo" src="../assets/pfc-logo.png" alt="logo">
   </div>
 </template>
 
@@ -34,33 +34,6 @@ import navBar from '../components/nav-bar.vue'
 .pfc-logo {
   width: 300px;
   filter: invert(100);
-}
-
-.links-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 50%;
-}
-
-.links-container a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.links-container a:hover {
-  transform: scale(1.2);
-}
-
- .nav-link {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
- }
-
-.social-link {
-  font-size: 35px;
 }
 
 .video-container::before {
