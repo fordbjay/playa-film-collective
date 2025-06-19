@@ -3,13 +3,18 @@
     <div class="main-container">
         <p>
             Please send your inquiries to 
-            <a 
-                class="email-link"
+            <a  
                 href="mailto:playafilmcollective@gmail.com"
-            >
-            playafilmcollective@gmail.com
+                class="email-link"
+            >playafilmcollective@gmail.com
             </a>
         </p>
+
+        <div class="arrow-text-container">
+            <p>...or reach out to us on our socials</p>
+            <img class="red-arrow" src="../assets/red-arrow.png" alt="red-arrow">
+
+        </div>
     </div>
 
 </template>
@@ -28,21 +33,43 @@ import navBar from '../components/nav-bar.vue'
     background-color: rgb(157,185,222);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    z-index: 10000000;
+    font-size: 22px;
 }
 
 .email-link {
     color: white;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 34px;
     text-decoration: none;
-    
-    transition: transform 0.3s ease,
+    transition: .2s ease-in-out;
+    display: inline-block;
 }
 
 .email-link:hover {
-    transform: scale(1.2);
+    transform: scale(1.015);
 }
+
+.arrow-text-container{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid; */
+    width: 220px;
+}
+
+.red-arrow {
+    width: 150px;
+    opacity: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+    .email-link {
+      font-size: 24px;
+    }
+  }
 
 </style>
