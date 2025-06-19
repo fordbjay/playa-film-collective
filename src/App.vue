@@ -1,5 +1,7 @@
 <template>
 
+  <navBar />
+
   <RouterView />
 
 </template>
@@ -7,6 +9,7 @@
 <script setup>
 
 import { RouterLink, RouterView } from 'vue-router';
+import navBar from './components/nav-bar.vue'
 
 </script>
 
@@ -20,6 +23,7 @@ import { RouterLink, RouterView } from 'vue-router';
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 </style>

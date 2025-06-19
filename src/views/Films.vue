@@ -1,5 +1,5 @@
 <template>
-    <navBar></navBar>
+    <!-- <navBar></navBar> -->
     <div class="main-container">
 
     </div>

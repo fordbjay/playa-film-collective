@@ -1,7 +1,11 @@
 <template>
-  <!-- <navBar></navBar> -->
 
+  <!-- <navBar></navBar> -->
   <!-- BACKGROUND -->
+  <div class="main-container">
+    <img class="pfc-logo" src="../assets/pfc-logo.png" alt="logo">
+  </div>
+  
   <div class="video-container">
       <video class="loop-video" playsinline autoplay loop muted>
         <source src="/src/assets/drone-background.mp4" type="video/mp4" />
@@ -9,10 +13,6 @@
       </video>
   </div>
 
-  <navBar></navBar>
-  <div class="main-container">
-    <img class="pfc-logo" src="../assets/pfc-logo.png" alt="logo">
-  </div>
 </template>
 
 <script setup>
@@ -23,12 +23,13 @@ import navBar from '../components/nav-bar.vue'
 <style scoped>
 
 .main-container {
-  display: flex;
+  z-index: 999;
+  display: flex; 
   align-items: center;
   justify-content: center;
-  gap: 80px;
   height: 100vh;
   animation: fadeIn .75s ease-in-out forwards;
+  /* border: 1px solid; */
 }
 
 .pfc-logo {
@@ -44,18 +45,26 @@ import navBar from '../components/nav-bar.vue'
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  z-index: -999;
+  z-index: 999;
 }
 
 .video-container {
-  font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1000;
+  z-index: 1000;
+  width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
 }
 
 .loop-video {
@@ -66,7 +75,7 @@ import navBar from '../components/nav-bar.vue'
   min-width: 100vw;
   min-height: 100vh;
   object-fit: cover;
-  z-index: -1000;
+  /* z-index: 1000; */
   animation: fadeIn .5s ease-in-out forwards;
 }
 

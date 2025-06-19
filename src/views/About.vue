@@ -1,10 +1,9 @@
 <template>
 
-<navBar></navBar>
+<!-- <navBar></navBar> -->
 
 <div class="main-container">
     <p>
-
         We aim to showcase the creativity and talent here, 
         proving there’s a hunger for filmmaking in our community. 
         It’s not just about one event—it’s about building a 

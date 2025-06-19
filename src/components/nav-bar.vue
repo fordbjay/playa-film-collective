@@ -1,8 +1,8 @@
 <template>
 
-<div :class="{ 'nav-container': true, 'slide-right': $route.name === 'Home' }">
+  <div :class="{ 'nav-container': true, 'slide-right': $route.name === 'Home' }">
 
-    <RouterLink v-if="$route.name !== 'Home'" to="/" class="logo-link">
+    <RouterLink v-if="$route.name !== 'Home'" to="/" class="logo-link wrapper">
       <img 
         :class="{ 'pfc-logo': true, 'slide-left': $route.name !== 'Home' }" 
         src="../assets/pfc-logo.png" 
@@ -11,7 +11,7 @@
     </RouterLink>
 
     <div class="navs-wrapper wrapper">
-      <RouterLink to="/about" class="nav link">WHO WE ARE</RouterLink>
+      <RouterLink to="/about" class="nav link">ABOUT US</RouterLink>
       <RouterLink to="/films" class="nav link">FILMS</RouterLink>
       <RouterLink to="/contact" class="nav link">CONTACT</RouterLink>
     </div>
@@ -30,72 +30,69 @@
         <i class="fa-brands fa-instagram"></i>
       </a>
     </div>
-    
-</div>
+      
+  </div>
 
-  </template>
-  
-  <script setup>
+</template>
 
-  </script>
-  
-  <style scoped>
+<script setup>
+
+
+
+</script>
+
+<style scoped>
 
 .nav-container {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.wrapper {
+  position: absolute;
+  pointer-events: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 50px;
-  z-index: 10000;
-}
-
-.slide-right {
-    animation: slideRight 0.5s ease-in-out forwards;
-}
-
-.slide-left {
-  animation: slideLeft 0.5s ease-in-out forwards;
 }
 
 .logo-link {
-  position: fixed;
   top: 50px;
   left: 50px;
-  /* z-index: 1100; */
-  display: inline-block;
-}
-
-.pfc-logo {
-  width: 125px;
-  filter: invert(100);
-
 }
 
 .navs-wrapper {
+  top: 50px;
+  right: 50px;
   display: flex;
-  flex-direction: column;
   gap: 10px;
-  align-items: flex-end;
+  align-items: end;
 }
 
 .socials-wrapper {
+  bottom: 50px;
+  right: 50px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
 
-.link {
+.pfc-logo {
+  height: 125px;
+  width: auto;
+  filter: invert(100);
+}
+
+.nav.link, .social.link {
   color: white;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-decoration: none;
   transition: .2s ease-in-out;
+  /* font-size: 20px; */
 }
 
 .link:hover {
@@ -103,11 +100,20 @@
 }
 
 .nav {
-    font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 .social {
-    font-size: 30px;
+  font-size: 30px;
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease-in-out forwards;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-in-out forwards;
 }
 
 @keyframes slideRight {
@@ -127,7 +133,6 @@
     transform: translate(0px);
   }
 }
-
 
   </style>
   
