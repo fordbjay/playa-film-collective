@@ -3,7 +3,8 @@
 <!-- <navBar></navBar> -->
 
 <div class="main-container">
-    <p>
+    <div class="content-wrapper">
+<p>
         We aim to showcase the creativity and talent here, 
         proving there’s a hunger for filmmaking in our community. 
         It’s not just about one event—it’s about building a 
@@ -11,6 +12,10 @@
         del Carmen on the map as a hub for cinematic innovation, 
         all while pursuing our passion together.
     </p>
+    <img class="pfc-crew-pic" src="../assets/playa-low.jpg" alt="pfc-crew">
+
+    </div>
+    
 </div>
 
 </template>
@@ -24,15 +29,30 @@ import navBar from '../components/nav-bar.vue'
 <style scoped>
 
 .main-container {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
     height: 100vh;
     background-color: rgb(69,147,171);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+p {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
-    z-index: 10000000;
 }
+
+.pfc-crew-pic {
+    width: 500px;
+}
+
 
 </style>
