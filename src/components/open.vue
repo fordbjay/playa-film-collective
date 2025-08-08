@@ -1,36 +1,37 @@
 <template>
 
-<!-- content -->
+
+  <section class="hero-section">
+
+    <!-- Background video -->
+    <video
+      class="hero-video"
+      playsinline
+      autoplay
+      loop
+      muted
+      preload="metadata"
+    >
+      <source src="/src/assets/drone-background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
 
-  <div class="main-container">
+    <div class="cta-container">
 
-    <div class="content-container">
-
-      <img class="pfc-logo" src="../assets/pfc-logo.png" alt="logo">
-              
-      <h1>We are a full-service film production company in Playa del Carmen, Mexico</h1>
+      <div class="cta-wrapper">
+        <h1>We are a full-service film production company in Playa del Carmen, Mexico</h1>
+        <button>get to know us</button>
+      </div>
 
     </div>
 
-    <!-- Background video as part of content flow -->
-    <div class="video-section">
-      <video
-        class="scroll-video"
-        playsinline
-        autoplay
-        loop
-        muted
-        preload="metadata"
-      >
-        <source src="/src/assets/drone-background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
 
 
 
-  </div>
+  </section>
+
+
 </template>
 
 <script>
@@ -38,35 +39,36 @@ export default {};
 </script>
 
 <style scoped>
-.video-section {
-  width: 100vw;
-  height: 100vh; /* fills one full viewport height */
-  overflow: hidden;
-  z-index: -1;
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.scroll-video {
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  z-index: -2;
 }
 
-.content-container {
-  position: absolute;
-  z-index: 1;
+.cta-container {
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid;
+  height: 100vh;
+  /* remove height: 100vh */
 }
 
-.pfc-logo {
-  width: 200px;
-  filter: invert(100);
+.cta-wrapper {
+  border: 1px solid;
+  width: max-content;
+  height: max-content;
+  display: flex;
 }
-
-h1 {
-  color: white;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
 
 </style>

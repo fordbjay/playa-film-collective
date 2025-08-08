@@ -22,7 +22,7 @@ import navBar from './components/nav-bar.vue'
   margin: 0;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
