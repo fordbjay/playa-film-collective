@@ -1,8 +1,10 @@
 <template>
 
-  <navBar />
+  <!-- <navBar /> -->
 
   <RouterView />
+
+
 
 </template>
 

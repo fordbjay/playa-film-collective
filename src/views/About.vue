@@ -4,7 +4,8 @@
 
 <div class="main-container">
     <div class="content-wrapper">
-<p>
+        <h1>ABOUT US</h1>
+<p class="text">
         We aim to showcase the creativity and talent here, 
         proving there’s a hunger for filmmaking in our community. 
         It’s not just about one event—it’s about building a 
@@ -44,7 +45,12 @@ import navBar from '../components/nav-bar.vue'
     gap: 30px;
 }
 
-p {
+h1 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
