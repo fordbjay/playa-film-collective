@@ -1,6 +1,7 @@
 <template>
 
     <open/>
+    <div>test</div>
     <aboutUs/>
 
 </template>
@@ -26,6 +27,8 @@
 
 <style scoped>
 
-
+div {
+    z-index: 10000;
+}
 
 </style>
