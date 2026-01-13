@@ -1,6 +1,7 @@
 <template>
 
   <!-- <navBar /> -->
+  <!-- <navBarMobile/> -->
 
   <RouterView />
 
@@ -12,6 +13,7 @@
 
 import { RouterLink, RouterView } from 'vue-router';
 import navBar from './components/nav-bar.vue'
+import navBarMobile from './components/nav-bar-mobile.vue';
 
 </script>
 

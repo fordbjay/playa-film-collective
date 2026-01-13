@@ -1,8 +1,9 @@
 <template>
 
     <open/>
-    <div>test</div>
-    <aboutUs/>
+    <!-- <aboutUs/> -->
+    <!-- <projects/> -->
+    
 
 </template>
 
@@ -10,10 +11,11 @@
 
     import open from '../components/open.vue'
     import aboutUs from '../components/about-us.vue'
+    import projects from '../components/projects.vue'
 
     export default {
         
-        components: { open, aboutUs },
+        components: { open, aboutUs, projects },
 
     data() {
         return {
@@ -27,8 +29,6 @@
 
 <style scoped>
 
-div {
-    z-index: 10000;
-}
-
 </style>
+
+

@@ -1,4 +1,6 @@
 <template>
+
+
     <button @click="toggleMenu" class="hamburger" :class="{ open: isOpen }">
         <span></span>
         <span></span>
@@ -42,6 +44,8 @@
   </script>
   
   <style scoped>
+
+
   
   .hamburger {
     position: fixed;
@@ -105,7 +109,10 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 90;
+  /* background-color: rgb(15, 147, 116); */
 }
+
+
 
 /* Nav links at top of dropdown */
 .nav-wrapper {
@@ -170,6 +177,8 @@
   transform: translateX(0);
   opacity: 1;
 }
+
+
 
 
 

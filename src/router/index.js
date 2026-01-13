@@ -18,11 +18,11 @@ const routes = [
       }
   },
   { 
-    path: '/films',
-    name: 'Films',
-    component: () => import('../views/Films.vue'),
+    path: '/projects',
+    name: 'Projects',
+    component: () => import('../views/Projects.vue'),
     meta: {
-        title: "Films"
+        title: "Projects"
       }
   },
   { 
