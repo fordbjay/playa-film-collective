@@ -139,6 +139,7 @@
 
   .slogan-txt {
     font-size: 1.25rem;
+    width: 80%
   }
 
   .social-link {
