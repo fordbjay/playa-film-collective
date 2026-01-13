@@ -131,4 +131,20 @@
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 400px ) {
+  .pfc-logo {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+  .slogan-txt {
+    font-size: 1.25rem;
+  }
+
+  .social-link {
+    font-size: 30px;
+  }
+
+}
+
 </style>
