@@ -44,6 +44,9 @@
         <a class="social-link" href="https://www.instagram.com/playafilmcollective/" target="_blank">
           <i class="fa-brands fa-instagram" style="color: #DD2A7B;"></i>
         </a>
+        <a class="social-link" href="mailto: playafilmcollective@gmail.com">
+          <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+        </a>
       </div>
     </div>
   
